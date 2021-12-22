@@ -36,6 +36,7 @@ class Message extends BaseModel
      */
     protected $casts = [
         'flagged' => 'boolean',
+        'data' => 'array'
     ];
 
     protected $appends = ['sender'];
@@ -85,7 +86,7 @@ class Message extends BaseModel
      *
      * @return Model
      */
-    public function send(Conversation $conversation, string $body, Participation $participant, string $type = 'text', string $data = ''): Model
+    public function send(Conversation $conversation, string $body, Participation $participant, string $type = 'text', array $data): Model
     {
         $message = $conversation->messages()->create([
             'body'             => $body,

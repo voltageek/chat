@@ -187,12 +187,12 @@ $message = Chat::message('http://example.com/img')
 ```
 #### To add more details about a message
 
-Sometimes you might want to add details about a message. For example, when the message type is an attachment, and you want to add details such as attachment's filename, and attachment's file url, you can call the `data()` function and pass your data as json.
+Sometimes you might want to add details about a message. For example, when the message type is an attachment, and you want to add details such as attachment's filename, and attachment's file url, you can call the `data()` function and pass your data as an array.
 
 ```php
 $message = Chat::message('Attachment 1')
 		->type('attachment')
-		->data('{ file_name: "post_image.jpg", file_url: "http://example.com/img.jpg"}')
+		->data(['file_name' => 'post_image.jpg', 'file_url' => 'http://example.com/post_img.jpg'])
 		->from($model)
 		->to($conversation)
 		->send();

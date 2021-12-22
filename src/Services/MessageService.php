@@ -13,7 +13,7 @@ class MessageService
     use SetsParticipants;
 
     protected $type = 'text';
-    protected $data = '';
+    protected $data = [];
     protected $body;
     /**
      * @var CommandBus
@@ -55,7 +55,7 @@ class MessageService
         return $this;
     }
 
-    public function data(string $data)
+    public function data(array $data)
     {
         $this->data = $data;
 
