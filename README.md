@@ -8,6 +8,8 @@
 
 Create a Chat application for your multiple Models
 
+What to learn how to make a package like this? https://leanpub.com/laravel-package-development
+
 ## Table of Contents
 
 <details><summary>Click to expand</summary><p>
