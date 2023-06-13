@@ -1,6 +1,6 @@
 {
-    "name": "musonza/chat",
-    "description": "Chat Package for Laravel",
+    "name": "voltageek/chat",
+    "description": "Fork of muzonsa/chat",
     "type": "library",
     "keywords": [
         "laravel",
@@ -23,8 +23,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Tinashe Musonza",
-            "email": "tashtin263@gmail.com",
+            "name": "Kwame Nkansah",
+            "email": "kwame.nkansah@gmail.com",
             "role": "Developer"
         }
     ],
